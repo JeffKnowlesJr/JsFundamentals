@@ -23,7 +23,7 @@
 
 function coinChange(pennyCollection) {
 
-  coinReference = {dollar : 100, dime : 10, nickel : 5, penny : 1};
+  coinReference = {dollar : 100, quarter : 25, dime : 10, nickel : 5, penny : 1};
   coinCollection = {};
 
   for ( coin in coinReference ) {
@@ -33,3 +33,4 @@ function coinChange(pennyCollection) {
   return coinCollection;
 }
 console.log(coinChange(312));
+console.log(coinChange(78));
